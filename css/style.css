@@ -1,0 +1,362 @@
+/* ==========================================================================
+   CSS VARIABLES & BRAND COLORS
+   ========================================================================== */
+:root {
+    --cc-primary: #1150F8;
+    --cc-secondary: #2EBEFF;
+    --cc-dark: #0B1220;
+    --cc-light: #F5F8FF;
+    --cc-gray: #64748B;
+    --cc-gradient: linear-gradient(135deg, #1150F8, #2EBEFF);
+}
+
+/* ==========================================================================
+   BASE & TYPOGRAPHY
+   ========================================================================== */
+body {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    color: var(--cc-dark);
+    line-height: 1.7;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.text-cc-primary { color: var(--cc-primary) !important; }
+.text-cc-secondary { color: var(--cc-secondary) !important; }
+.text-cc-dark { color: var(--cc-dark) !important; }
+.text-cc-gray { color: var(--cc-gray) !important; }
+.bg-cc-light { background-color: var(--cc-light) !important; }
+.bg-cc-dark { background-color: var(--cc-dark) !important; }
+
+.bg-gradient-primary {
+    background: var(--cc-gradient) !important;
+}
+
+.text-gradient {
+    background: var(--cc-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom Buttons */
+.btn-cc-primary {
+    background: var(--cc-gradient);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-cc-primary:hover {
+    box-shadow: 0 8px 20px rgba(17, 80, 248, 0.4);
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.btn-cc-outline {
+    border: 2px solid var(--cc-primary);
+    color: var(--cc-primary);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.btn-cc-outline:hover {
+    background: var(--cc-primary);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.custom-navbar.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 0.6rem 0;
+}
+
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--cc-gradient);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--cc-dark);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--cc-primary) !important;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background-color: var(--cc-light);
+}
+
+.hero-grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(17, 80, 248, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.6;
+}
+
+.badge-custom {
+    background: rgba(17, 80, 248, 0.08);
+    color: var(--cc-primary);
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+}
+
+/* Hero Floating Visual Elements */
+.hero-visual-wrapper {
+    width: 100%;
+    max-width: 480px;
+    height: 400px;
+}
+
+.hero-center-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    width: 200px;
+    height: 180px;
+    border-radius: 24px;
+    border: 1px solid rgba(17, 80, 248, 0.15);
+    box-shadow: 0 10px 30px rgba(17, 80, 248, 0.15);
+    z-index: 2;
+}
+
+.center-icon {
+    font-size: 2.5rem;
+}
+
+.float-card {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 24px rgba(11, 18, 32, 0.08);
+    animation: float 4s ease-in-out infinite;
+    z-index: 3;
+}
+
+.card-ai { top: 10%; left: 0; animation-delay: 0s; }
+.card-web { top: 15%; right: -10px; animation-delay: 1s; }
+.card-app { bottom: 15%; left: -10px; animation-delay: 2s; }
+.card-robotics { bottom: 10%; right: 0; animation-delay: 3s; }
+
+.code-deco {
+    position: absolute;
+    color: rgba(17, 80, 248, 0.2);
+    font-size: 3rem;
+    user-select: none;
+}
+.deco-1 { top: 0; right: 20%; }
+.deco-2 { bottom: 0; left: 20%; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ==========================================================================
+   CARDS & SECTIONS
+   ========================================================================== */
+.section-title {
+    font-size: 2.25rem;
+    border-radius: 16px;
+}
+
+/* Custom Cards */
+.card-custom, .program-card, .value-card {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.card-custom:hover, .program-card:hover, .value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(17, 80, 248, 0.12) !important;
+}
+
+.value-icon, .card-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: var(--cc-light);
+    color: var(--cc-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Dark Glassmorphism Cards */
+.dark-glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.dark-glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--cc-secondary);
+    box-shadow: 0 0 20px rgba(46, 190, 255, 0.2);
+    transform: translateY(-50px);
+    transform: translateY(-5px);
+}
+
+/* Timeline */
+.timeline-line {
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: var(--cc-gradient);
+    z-index: 0;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--cc-gradient);
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 0 0 6px #ffffff;
+}
+
+/* Portfolio Section */
+#portfolio-flters .nav-link {
+    color: var(--cc-gray);
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+#portfolio-flters .nav-link.active {
+    background: var(--cc-gradient);
+    color: white;
+}
+
+.portfolio-visual {
+    height: 180px;
+}
+
+.portfolio-item {
+    transition: all 0.4s ease;
+}
+
+/* Feature Boxes */
+.feature-box {
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+.feature-box:hover {
+    border-color: var(--cc-primary) !important;
+    box-shadow: 0 10px 25px rgba(17, 80, 248, 0.08);
+}
+
+/* CTA Decorative Text */
+.cta-deco {
+    position: absolute;
+    font-size: 8rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.08);
+    user-select: none;
+}
+.deco-left { left: -20px; bottom: -30px; }
+.deco-right { right: -20px; top: -30px; }
+
+/* Contact Form */
+.form-control:focus, .form-select:focus {
+    border-color: var(--cc-primary);
+    box-shadow: 0 0 0 0.25rem rgba(17, 80, 248, 0.15);
+}
+
+/* Footer Links */
+.footer-links a {
+    color: var(--cc-gray);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.footer-links a:hover {
+    color: var(--cc-secondary);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ==========================================================================
+   ANIMATIONS & RESPONSIVE
+   ========================================================================== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+    .timeline-line { display: none; }
+    .hero-title { font-size: 2.25rem; }
+    .hero-visual-wrapper { height: 320px; scale: 0.85; }
+    .float-card span { font-size: 0.8rem !important; }
+}

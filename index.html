@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft Digital — Creative Technology Community & Digital Studio</title>
+    <meta name="description" content="CodeCraft Digital adalah wadah kreatif bagi generasi muda untuk belajar teknologi, membuat project digital, dan berkolaborasi membangun solusi masa depan.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="CodeCraft Digital — Creative Technology Community & Digital Studio">
+    <meta property="og:description" content="Learn Technology. Create the Future. Bergabunglah dengan komunitas teknologi kreatif kami.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codecraftdigital.id">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <!-- <span class="brand-icon"><i class="bi bi-code-slash"></i></span>
+                <span class="brand-text">CodeCraft<span class="text-gradient">.Digital</span></span> -->
+                <img src="images/logo-landscap.png" alt="" height="45px">
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mx-lg-auto text-center gap-lg-3 py-3 py-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="text-center text-lg-end">
+                    <a href="#contact" class="btn btn-cc-primary shadow-sm rounded-pill px-4">Mulai Bersama Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <div class="hero-grid-pattern"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 text-center text-lg-start fade-up">
+                    <div class="badge-custom d-inline-flex align-items-center gap-2 mb-3">
+                        <i class="bi bi-stars"></i> CREATIVE TECHNOLOGY COMMUNITY
+                    </div>
+                    <h1 class="hero-title display-4 fw-extrabold text-cc-dark mb-3">
+                        Learn Technology.<br><span class="text-gradient">Create the Future.</span>
+                    </h1>
+                    <p class="hero-subtext text-cc-gray lead mb-4">
+                        CodeCraft Digital adalah ruang bagi generasi kreatif untuk belajar teknologi, membangun produk digital, dan berkolaborasi menciptakan solusi untuk masa depan.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#programs" class="btn btn-cc-primary btn-lg rounded-pill px-4">Mulai Belajar</a>
+                        <a href="#services" class="btn btn-cc-outline btn-lg rounded-pill px-4">Lihat Layanan</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up" data-delay="200">
+                    <!-- HERO VISUAL (HTML/CSS Floating Tech Ecosystem) -->
+                    <div class="hero-visual-wrapper position-relative mx-auto">
+                        <div class="hero-center-card shadow-lg p-4 rounded-4 text-center">
+                            <div class="center-icon mb-2"><i class="bi bi-code-slash text-gradient"></i></div>
+                            <h4 class="fw-bold mb-0">CODE<br><span class="text-gradient">CRAFT</span></h4>
+                        </div>
+                        
+                        <!-- Floating Tech Cards -->
+                        <div class="float-card card-ai shadow-sm p-3 rounded-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-robot fs-3 text-primary"></i>
+                            <div>
+                                <small class="text-cc-gray d-block">Module</small>
+                                <span class="fw-bold fs-6">Artificial Intelligence</span>
+                            </div>
+                        </div>
+
+                        <div class="float-card card-web shadow-sm p-3 rounded-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-globe fs-3 text-info"></i>
+                            <div>
+                                <span class="fw-bold fs-6">&lt;/&gt; Web Dev</span>
+                            </div>
+                        </div>
+
+                        <div class="float-card card-app shadow-sm p-3 rounded-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-phone fs-3 text-primary"></i>
+                            <div>
+                                <span class="fw-bold fs-6">App Development</span>
+                            </div>
+                        </div>
+
+                        <div class="float-card card-robotics shadow-sm p-3 rounded-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-cpu fs-3 text-info"></i>
+                            <div>
+                                <span class="fw-bold fs-6">Robotics & IoT</span>
+                            </div>
+                        </div>
+
+                        <!-- Code Decorations -->
+                        <span class="code-deco deco-1 fw-bold">{ }</span>
+                        <span class="code-deco deco-2 fw-bold">&lt;/&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND STATEMENT / ABOUT -->
+    <section id="about" class="py-5 bg-white position-relative">
+        <div class="container py-lg-5">
+            <div class="row justify-content-center text-center mb-5 fade-up">
+                <div class="col-lg-9">
+                    <h2 class="section-title fw-bold mb-3">Technology is better when we build it together.</h2>
+                    <p class="text-cc-gray fs-5">
+                        CodeCraft Digital hadir untuk menghubungkan pembelajaran, kreativitas, dan teknologi. Kami percaya bahwa teknologi bukan hanya sesuatu yang dipelajari, tetapi sesuatu yang harus dibuat, dieksplorasi, dan dibagikan bersama.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 fade-up" data-delay="100">
+                    <div class="value-card text-center p-4 rounded-4 h-100 border-0 shadow-sm">
+                        <div class="value-icon mb-3 mx-auto"><i class="bi bi-mortarboard"></i></div>
+                        <h4 class="fw-bold mb-2">LEARN</h4>
+                        <p class="text-cc-gray mb-0">Learn new technology through hands-on practice, mentorship, and creative exploration.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" data-delay="200">
+                    <div class="value-card text-center p-4 rounded-4 h-100 border-0 shadow-sm">
+                        <div class="value-icon mb-3 mx-auto"><i class="bi bi-code-square"></i></div>
+                        <h4 class="fw-bold mb-2">CREATE</h4>
+                        <p class="text-cc-gray mb-0">Turn ideas into real projects, apps, platforms, and interactive digital experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" data-delay="300">
+                    <div class="value-card text-center p-4 rounded-4 h-100 border-0 shadow-sm">
+                        <div class="value-icon mb-3 mx-auto"><i class="bi bi-people"></i></div>
+                        <h4 class="fw-bold mb-2">COLLABORATE</h4>
+                        <p class="text-cc-gray mb-0">Grow together with the community, share knowledge, and build meaningful solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="py-5 bg-cc-light">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="section-title fw-bold">What We Do</h2>
+                <p class="text-cc-gray">Dari belajar teknologi hingga membangun produk digital.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- CARD 1 -->
+                <div class="col-lg-4 fade-up" data-delay="100">
+                    <div class="card card-custom h-100 p-4 border-0 shadow-sm">
+                        <div class="card-icon-wrapper mb-3"><i class="bi bi-mortarboard fs-2"></i></div>
+                        <h3 class="fw-bold fs-4 mb-3">CodeCraft Academy</h3>
+                        <p class="text-cc-gray mb-4">Program pembelajaran teknologi untuk anak, remaja, pelajar, guru, dan siapa saja yang ingin mengembangkan keterampilan digital.</p>
+                        <div class="tags-wrapper d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-light text-cc-primary">Coding</span>
+                            <span class="badge bg-light text-cc-primary">AI</span>
+                            <span class="badge bg-light text-cc-primary">Programming</span>
+                            <span class="badge bg-light text-cc-primary">Robotics</span>
+                        </div>
+                        <a href="#programs" class="mt-auto text-decoration-none fw-bold text-cc-primary">Explore Academy &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-4 fade-up" data-delay="200">
+                    <div class="card card-custom h-100 p-4 border-0 shadow-sm">
+                        <div class="card-icon-wrapper mb-3"><i class="bi bi-laptop fs-2"></i></div>
+                        <h3 class="fw-bold fs-4 mb-3">CodeCraft Studio</h3>
+                        <p class="text-cc-gray mb-4">Solusi digital untuk mengubah ide menjadi website, aplikasi, dan sistem digital yang siap digunakan.</p>
+                        <div class="tags-wrapper d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-light text-cc-primary">Website</span>
+                            <span class="badge bg-light text-cc-primary">Apps</span>
+                            <span class="badge bg-light text-cc-primary">UI/UX</span>
+                            <span class="badge bg-light text-cc-primary">Custom System</span>
+                        </div>
+                        <a href="#services" class="mt-auto text-decoration-none fw-bold text-cc-primary">Explore Services &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-4 fade-up" data-delay="300">
+                    <div class="card card-custom h-100 p-4 border-0 shadow-sm">
+                        <div class="card-icon-wrapper mb-3"><i class="bi bi-cpu fs-2"></i></div>
+                        <h3 class="fw-bold fs-4 mb-3">CodeCraft Labs</h3>
+                        <p class="text-cc-gray mb-4">Ruang eksperimen untuk mengeksplorasi AI, robotics, IoT, automation, dan teknologi masa depan.</p>
+                        <div class="tags-wrapper d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-light text-cc-primary">AI</span>
+                            <span class="badge bg-light text-cc-primary">Robotics</span>
+                            <span class="badge bg-light text-cc-primary">IoT</span>
+                            <span class="badge bg-light text-cc-primary">Automation</span>
+                        </div>
+                        <a href="#projects" class="mt-auto text-decoration-none fw-bold text-cc-primary">Explore Labs &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS SECTION -->
+    <section id="programs" class="py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="section-title fw-bold">Learn With CodeCraft</h2>
+                <p class="text-cc-gray">Belajar teknologi dengan pendekatan project-based learning.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="100">
+                    <div class="card program-card h-100 p-4 rounded-4 border-0 shadow-sm">
+                        <span class="badge bg-light text-cc-primary w-auto align-self-start mb-3 px-3 py-2">Kids</span>
+                        <div class="program-icon text-cc-primary mb-3"><i class="bi bi-controller fs-1"></i></div>
+                        <h4 class="fw-bold mb-2">Coding for Kids</h4>
+                        <p class="text-cc-gray mb-4">Belajar coding melalui permainan, animasi, dan project kreatif.</p>
+                        <a href="#contact" class="mt-auto text-decoration-none fw-bold text-cc-primary">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="200">
+                    <div class="card program-card h-100 p-4 rounded-4 border-0 shadow-sm">
+                        <span class="badge bg-light text-cc-primary w-auto align-self-start mb-3 px-3 py-2">Teens</span>
+                        <div class="program-icon text-cc-primary mb-3"><i class="bi bi-code-slash fs-1"></i></div>
+                        <h4 class="fw-bold mb-2">Coding for Teens</h4>
+                        <p class="text-cc-gray mb-4">Programming, web development, AI, dan digital project.</p>
+                        <a href="#contact" class="mt-auto text-decoration-none fw-bold text-cc-primary">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="300">
+                    <div class="card program-card h-100 p-4 rounded-4 border-0 shadow-sm">
+                        <span class="badge bg-light text-cc-primary w-auto align-self-start mb-3 px-3 py-2">Hardware</span>
+                        <div class="program-icon text-cc-primary mb-3"><i class="bi bi-robot fs-1"></i></div>
+                        <h4 class="fw-bold mb-2">Robotics</h4>
+                        <p class="text-cc-gray mb-4">Membangun robot sambil belajar programming dan sensor.</p>
+                        <a href="#contact" class="mt-auto text-decoration-none fw-bold text-cc-primary">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="100">
+                    <div class="card program-card h-100 p-4 rounded-4 border-0 shadow-sm">
+                        <span class="badge bg-light text-cc-primary w-auto align-self-start mb-3 px-3 py-2">AI Tech</span>
+                        <div class="program-icon text-cc-primary mb-3"><i class="bi bi-cpu fs-1"></i></div>
+                        <h4 class="fw-bold mb-2">AI for Everyone</h4>
+                        <p class="text-cc-gray mb-4">Mengenal dan menggunakan Artificial Intelligence.</p>
+                        <a href="#contact" class="mt-auto text-decoration-none fw-bold text-cc-primary">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="200">
+                    <div class="card program-card h-100 p-4 rounded-4 border-0 shadow-sm">
+                        <span class="badge bg-light text-cc-primary w-auto align-self-start mb-3 px-3 py-2">Web</span>
+                        <div class="program-icon text-cc-primary mb-3"><i class="bi bi-globe fs-1"></i></div>
+                        <h4 class="fw-bold mb-2">Web Development</h4>
+                        <p class="text-cc-gray mb-4">Belajar membangun website dari dasar hingga project nyata.</p>
+                        <a href="#contact" class="mt-auto text-decoration-none fw-bold text-cc-primary">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="300">
+                    <div class="card program-card h-100 p-4 rounded-4 border-0 shadow-sm">
+                        <span class="badge bg-light text-cc-primary w-auto align-self-start mb-3 px-3 py-2">Community</span>
+                        <div class="program-icon text-cc-primary mb-3"><i class="bi bi-journal-code fs-1"></i></div>
+                        <h4 class="fw-bold mb-2">Technology Workshop</h4>
+                        <p class="text-cc-gray mb-4">Workshop teknologi untuk sekolah dan komunitas.</p>
+                        <a href="#contact" class="mt-auto text-decoration-none fw-bold text-cc-primary">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIGITAL SERVICES (DARK SECTION) -->
+    <section id="services" class="py-5 bg-cc-dark text-white position-relative">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="section-title text-white fw-bold">Build Your Digital Idea</h2>
+                <p class="text-cc-gray">Have an idea? Let's build it.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="100">
+                    <div class="dark-glass-card h-100 p-4 rounded-4">
+                        <i class="bi bi-window fs-1 text-cc-secondary mb-3 d-block"></i>
+                        <h4 class="fw-bold mb-2">Website Development</h4>
+                        <p class="text-cc-gray">Website modern, responsive, dan sesuai kebutuhan bisnis.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="200">
+                    <div class="dark-glass-card h-100 p-4 rounded-4">
+                        <i class="bi bi-browser-chrome fs-1 text-cc-secondary mb-3 d-block"></i>
+                        <h4 class="fw-bold mb-2">Web Application</h4>
+                        <p class="text-cc-gray">Sistem berbasis web untuk meningkatkan efisiensi.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="300">
+                    <div class="dark-glass-card h-100 p-4 rounded-4">
+                        <i class="bi bi-phone fs-1 text-cc-secondary mb-3 d-block"></i>
+                        <h4 class="fw-bold mb-2">Mobile Application</h4>
+                        <p class="text-cc-gray">Aplikasi mobile sesuai kebutuhan.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="100">
+                    <div class="dark-glass-card h-100 p-4 rounded-4">
+                        <i class="bi bi-gear-wide-connected fs-1 text-cc-secondary mb-3 d-block"></i>
+                        <h4 class="fw-bold mb-2">Custom Software</h4>
+                        <p class="text-cc-gray">Sistem digital yang dibuat khusus.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="200">
+                    <div class="dark-glass-card h-100 p-4 rounded-4">
+                        <i class="bi bi-robot fs-1 text-cc-secondary mb-3 d-block"></i>
+                        <h4 class="fw-bold mb-2">AI Solutions</h4>
+                        <p class="text-cc-gray">Integrasi AI untuk kebutuhan bisnis dan produktivitas.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" data-delay="300">
+                    <div class="dark-glass-card h-100 p-4 rounded-4">
+                        <i class="bi bi-motherboard fs-1 text-cc-secondary mb-3 d-block"></i>
+                        <h4 class="fw-bold mb-2">Robotics & IoT</h4>
+                        <p class="text-cc-gray">Prototype, automation, robotics, dan IoT solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center fade-up">
+                <a href="#contact" class="btn btn-cc-primary btn-lg rounded-pill px-5">Discuss Your Project &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="section-title fw-bold">From Idea to Reality</h2>
+                <p class="text-cc-gray">Bagaimana kami mentransformasi konsep menjadi produk nyata.</p>
+            </div>
+
+            <div class="timeline-wrapper position-relative">
+                <div class="timeline-line"></div>
+                <div class="row g-4 position-relative z-1">
+                    <div class="col-md-3 fade-up" data-delay="100">
+                        <div class="timeline-card text-center p-3">
+                            <div class="step-number mb-3 mx-auto">01</div>
+                            <h4 class="fw-bold mb-2">DISCOVER</h4>
+                            <p class="text-cc-gray mb-0 fs-6">Memahami kebutuhan dan ide.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fade-up" data-delay="200">
+                        <div class="timeline-card text-center p-3">
+                            <div class="step-number mb-3 mx-auto">02</div>
+                            <h4 class="fw-bold mb-2">PLAN</h4>
+                            <p class="text-cc-gray mb-0 fs-6">Menyusun konsep dan solusi.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fade-up" data-delay="300">
+                        <div class="timeline-card text-center p-3">
+                            <div class="step-number mb-3 mx-auto">03</div>
+                            <h4 class="fw-bold mb-2">BUILD</h4>
+                            <p class="text-cc-gray mb-0 fs-6">Mengembangkan dan menguji produk.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 fade-up" data-delay="400">
+                        <div class="timeline-card text-center p-3">
+                            <div class="step-number mb-3 mx-auto">04</div>
+                            <h4 class="fw-bold mb-2">GROW</h4>
+                            <p class="text-cc-gray mb-0 fs-6">Membantu produk berkembang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SHOWCASE -->
+    <section id="projects" class="py-5 bg-cc-light">
+        <div class="container py-lg-5">
+            <div class="text-center mb-4 fade-up">
+                <h2 class="section-title fw-bold">Ideas We've Built</h2>
+                <p class="text-cc-gray">Beberapa project yang menggambarkan bagaimana ide dapat berubah menjadi solusi digital.</p>
+            </div>
+
+            <!-- Nav Pills Filter -->
+            <ul class="nav nav-pills justify-content-center gap-2 mb-5 fade-up" id="portfolio-flters">
+                <li class="nav-item"><button class="nav-link active rounded-pill px-4" data-filter="all">All</button></li>
+                <li class="nav-item"><button class="nav-link rounded-pill px-4" data-filter="website">Website</button></li>
+                <li class="nav-item"><button class="nav-link rounded-pill px-4" data-filter="apps">Apps</button></li>
+                <li class="nav-item"><button class="nav-link rounded-pill px-4" data-filter="ai">AI</button></li>
+                <li class="nav-item"><button class="nav-link rounded-pill px-4" data-filter="robotics">Robotics</button></li>
+                <li class="nav-item"><button class="nav-link rounded-pill px-4" data-filter="iot">IoT</button></li>
+            </ul>
+
+            <!-- Portfolio Grid -->
+            <div class="row g-4" id="portfolio-grid">
+                <div class="col-md-6 col-lg-4 portfolio-item website fade-up">
+                    <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-visual bg-gradient-primary text-white d-flex align-items-center justify-content-center">
+                            <i class="bi bi-buildings fs-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-light text-cc-primary mb-2">Website</span>
+                            <h4 class="fw-bold fs-5">School Management System</h4>
+                            <p class="text-cc-gray fs-6">Digital platform untuk pengelolaan sekolah.</p>
+                            <a href="#" class="text-decoration-none fw-bold text-cc-primary">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-item apps fade-up" data-delay="100">
+                    <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-visual bg-gradient-primary text-white d-flex align-items-center justify-content-center">
+                            <img src="images/portfolio/cafe.png" alt="" height="180px">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-light text-cc-primary mb-2">Apps</span>
+                            <h4 class="fw-bold fs-5">Aplikasi Cafe</h4>
+                            <p class="text-cc-gray fs-6">Book dan Order cafe dimana saja kapan saja.</p>
+                            <a href="#" class="text-decoration-none fw-bold text-cc-primary">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-item website fade-up" data-delay="200">
+                    <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-visual bg-gradient-primary text-white d-flex align-items-center justify-content-center">
+                            <i class="bi bi-journal-code fs-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-light text-cc-primary mb-2">Website</span>
+                            <h4 class="fw-bold fs-5">Learning Platform</h4>
+                            <p class="text-cc-gray fs-6">Platform pembelajaran interaktif online.</p>
+                            <a href="#" class="text-decoration-none fw-bold text-cc-primary">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-item robotics iot fade-up" data-delay="100">
+                    <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-visual bg-gradient-primary text-white d-flex align-items-center justify-content-center">
+                            <i class="bi bi-robot fs-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-light text-cc-primary mb-2">Robotics / IoT</span>
+                            <h4 class="fw-bold fs-5">Smart Robotics</h4>
+                            <p class="text-cc-gray fs-6">Project robotik dan automation industri.</p>
+                            <a href="#" class="text-decoration-none fw-bold text-cc-primary">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 portfolio-item ai fade-up" data-delay="200">
+                    <div class="card h-100 rounded-4 border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-visual bg-gradient-primary text-white d-flex align-items-center justify-content-center">
+                            <i class="bi bi-cpu fs-1"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-light text-cc-primary mb-2">AI</span>
+                            <h4 class="fw-bold fs-5">AI Assistant</h4>
+                            <p class="text-cc-gray fs-6">Eksperimen AI untuk produktivitas tim.</p>
+                            <a href="#" class="text-decoration-none fw-bold text-cc-primary">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section id="community" class="py-5 bg-gradient-primary text-white overflow-hidden position-relative">
+        <div class="container py-lg-5 position-relative z-1">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 fade-up">
+                    <span class="badge bg-white text-cc-primary mb-3 px-3 py-2 fw-bold">OUR COMMUNITY</span>
+                    <h2 class="display-5 fw-bold mb-3">More Than a Course.<br>We're a Community.</h2>
+                    <p class="fs-5 opacity-90 mb-4">
+                        CodeCraft Digital adalah tempat bertemunya curious minds, creators, developers, educators, dan young innovators.
+                    </p>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> Coding Meetup</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> Technology Workshop</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> Hackathon</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> Robotics Challenge</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> AI Exploration</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> Project Collaboration</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> Tech Sharing</div>
+                        <div class="col-6"><i class="bi bi-check-circle-fill me-2"></i> Community Gathering</div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-light text-cc-primary btn-lg rounded-pill px-4 fw-bold">Join CodeCraft Community</a>
+                </div>
+
+                <div class="col-lg-6 fade-up" data-delay="200">
+                    <div class="community-visual position-relative p-4 rounded-4 bg-white bg-opacity-10 backdrop-blur">
+                        <div class="d-flex align-items-center gap-3 mb-3 p-3 bg-white text-dark rounded-3 shadow-sm">
+                            <i class="bi bi-people-fill fs-2 text-cc-primary"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0">Collaborative Coding</h6>
+                                <small class="text-cc-gray">Belajar &amp; buat project bareng</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-3 p-3 bg-white text-dark rounded-3 shadow-sm">
+                            <i class="bi bi-lightning-charge-fill fs-2 text-warning"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0">Robotics &amp; AI Lab</h6>
+                                <small class="text-cc-gray">Eksperimen teknologi masa depan</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 p-3 bg-white text-dark rounded-3 shadow-sm">
+                            <i class="bi bi-trophy-fill fs-2 text-success"></i>
+                            <div>
+                                <h6 class="fw-bold mb-0">Hackathon &amp; Showcase</h6>
+                                <small class="text-cc-gray">Tampilkan karya terbaikmu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CODECRAFT -->
+    <section class="py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="section-title fw-bold">Why CodeCraft?</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 fade-up" data-delay="100">
+                    <div class="feature-box text-center p-4 rounded-4 border h-100">
+                        <i class="bi bi-diagram-3 fs-1 text-cc-primary mb-3 d-block"></i>
+                        <h4 class="fw-bold fs-5 mb-2">Project-Based</h4>
+                        <p class="text-cc-gray mb-0">Belajar dengan membuat project nyata.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 fade-up" data-delay="200">
+                    <div class="feature-box text-center p-4 rounded-4 border h-100">
+                        <i class="bi bi-rocket-takeoff fs-1 text-cc-primary mb-3 d-block"></i>
+                        <h4 class="fw-bold fs-5 mb-2">Future Skills</h4>
+                        <p class="text-cc-gray mb-0">Fokus pada teknologi masa depan.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 fade-up" data-delay="300">
+                    <div class="feature-box text-center p-4 rounded-4 border h-100">
+                        <i class="bi bi-balloon-heart fs-1 text-cc-primary mb-3 d-block"></i>
+                        <h4 class="fw-bold fs-5 mb-2">Creative Community</h4>
+                        <p class="text-cc-gray mb-0">Belajar dan berkembang bersama.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 fade-up" data-delay="400">
+                    <div class="feature-box text-center p-4 rounded-4 border h-100">
+                        <i class="bi bi-shield-check fs-1 text-cc-primary mb-3 d-block"></i>
+                        <h4 class="fw-bold fs-5 mb-2">Real Solutions</h4>
+                        <p class="text-cc-gray mb-0">Teknologi diterapkan untuk masalah nyata.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-5 bg-gradient-primary text-white position-relative overflow-hidden">
+        <div class="container py-lg-5 text-center position-relative z-1 fade-up">
+            <h2 class="display-5 fw-bold mb-3">Ready to Build Something Amazing?</h2>
+            <p class="fs-5 opacity-90 max-w-700 mx-auto mb-4">
+                Whether you want to learn technology, build a digital product, or collaborate on an idea — CodeCraft Digital is ready to build it with you.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                <a href="#contact" class="btn btn-light text-cc-primary btn-lg rounded-pill px-4 fw-bold">Start a Project</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4">Join the Community</a>
+            </div>
+        </div>
+        <!-- Decorative Code -->
+        <span class="cta-deco deco-left">{ }</span>
+        <span class="cta-deco deco-right">&lt;/&gt;</span>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-5 bg-cc-light">
+        <div class="container py-lg-5">
+            <div class="row gy-5">
+                <div class="col-lg-6 fade-up">
+                    <h2 class="section-title fw-bold mb-3">Let's Create Something Together.</h2>
+                    <p class="text-cc-gray mb-4">
+                        Punya pertanyaan atau ingin memulai project digital? Isi formulir di samping atau hubungi kami melalui kontak di bawah ini.
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="contact-icon rounded-circle bg-white shadow-sm p-3 text-cc-primary">
+                            <i class="bi bi-envelope fs-4"></i>
+                        </div>
+                        <div>
+                            <span class="text-cc-gray d-block small">Email Us</span>
+                            <a href="mailto:hello@codecraftdigital.id" class="fw-bold text-cc-dark text-decoration-none">hello@codecraftdigital.id</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="contact-icon rounded-circle bg-white shadow-sm p-3 text-cc-primary">
+                            <i class="bi bi-whatsapp fs-4"></i>
+                        </div>
+                        <div>
+                            <span class="text-cc-gray d-block small">WhatsApp</span>
+                            <span class="fw-bold text-cc-dark">+62 8xx-xxxx-xxxx</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="contact-icon rounded-circle bg-white shadow-sm p-3 text-cc-primary">
+                            <i class="bi bi-geo-alt fs-4"></i>
+                        </div>
+                        <div>
+                            <span class="text-cc-gray d-block small">Location</span>
+                            <span class="fw-bold text-cc-dark">Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 fade-up" data-delay="200">
+                    <div class="card p-4 p-md-5 rounded-4 border-0 shadow-sm bg-white">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold">Name</label>
+                                <input type="text" class="form-control rounded-3" id="name" placeholder="Nama Lengkap" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control rounded-3" id="email" placeholder="email@domain.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="whatsapp" class="form-label fw-bold">WhatsApp</label>
+                                <input type="tel" class="form-control rounded-3" id="whatsapp" placeholder="08xxxxxxxxxx" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="interest" class="form-label fw-bold">I'm interested in</label>
+                                <select class="form-select rounded-3" id="interest" required>
+                                    <option value="" selected disabled>Pilih Kategori</option>
+                                    <option value="Coding Course">Coding Course</option>
+                                    <option value="Website">Website</option>
+                                    <option value="Application">Application</option>
+                                    <option value="AI">AI</option>
+                                    <option value="Robotics">Robotics</option>
+                                    <option value="IoT">IoT</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-bold">Message</label>
+                                <textarea class="form-control rounded-3" id="message" rows="4" placeholder="Tuliskan pesan atau kebutuhan project Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-cc-primary w-100 py-3 rounded-pill fw-bold">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-cc-dark text-white pt-5 pb-4">
+        <div class="container pt-lg-4">
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold d-flex align-items-center gap-2 mb-3 text-white" href="#">
+                        <!-- <span class="brand-icon"><i class="bi bi-code-slash"></i></span>
+                        <span>CodeCraft<span class="text-cc-secondary">.Digital</span></span> -->
+                        <img src="images/logo-codecraft-putih.png" alt="" width="100px">
+                    </a>
+                    <p class="text-cc-gray small mb-2">Learn. Create. Innovate.</p>
+                    <p class="text-cc-gray small">
+                        Creative technology community and digital technology studio helping people learn, create, and build with technology.
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="fw-bold mb-3 fs-6">Company</h5>
+                    <ul class="list-unstyled footer-links text-cc-gray small">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">Programs</h5>
+                    <ul class="list-unstyled footer-links text-cc-gray small">
+                        <li><a href="#programs">Coding</a></li>
+                        <li><a href="#programs">AI</a></li>
+                        <li><a href="#programs">Robotics</a></li>
+                        <li><a href="#programs">Web Development</a></li>
+                        <li><a href="#programs">Workshop</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 fs-6">Services</h5>
+                    <ul class="list-unstyled footer-links text-cc-gray small">
+                        <li><a href="#services">Website</a></li>
+                        <li><a href="#services">Applications</a></li>
+                        <li><a href="#services">Custom Software</a></li>
+                        <li><a href="#services">AI Solutions</a></li>
+                        <li><a href="#services">Robotics &amp; IoT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25">
+
+            <div class="text-center text-cc-gray small pt-3">
+                <p class="mb-0">&copy; 2026 CodeCraft Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top btn btn-cc-primary rounded-circle p-0" aria-label="Back to top">
+        <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
